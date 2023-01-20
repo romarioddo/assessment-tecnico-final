@@ -20,7 +20,7 @@ a avaliação será feita somente na organização da implementação feita por 
 - [QUESTÃO 3] Crie uma implementação para uma ação onde iremos ter múltiplos envios onde será executada de uma só vez. exemplo:
 SMS, Email e ao assinar em uma newsletter os usuários deverão receber todas as notificações enviadas por esta classe base. 
   - Coloque abaixo o link do seu github:
-
+    - https://github.com/romarioddo/assessment-tecnico-final/blob/main/question3/README.md
 
 
 - [QUESTÃO 4]Em uma situação que temos múltiplos ifs encadeados, faça uma refatoração para deixar o código mais fácil para dar manutenção. Exemplo:
