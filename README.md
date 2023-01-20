@@ -14,7 +14,7 @@ será feita pelos seguintes providers (Whatsapp, SMS e email)
 Queremos ver como você montaria o design deste código, por isso não precisa implementar a ação de envio dos providers,
 a avaliação será feita somente na organização da implementação feita por você. 
   - Coloque abaixo o link do seu github:
-
+    - https://github.com/romarioddo/assessment-tecnico-final/blob/main/question2/README.md
 
 
 - [QUESTÃO 3] Crie uma implementação para uma ação onde iremos ter múltiplos envios onde será executada de uma só vez. exemplo:
