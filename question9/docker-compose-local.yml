@@ -1,0 +1,89 @@
+version: '3.8'
+
+services:
+  app:
+    image: app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - postgres
+      - redis
+      - redis-store
+    ports:
+      - '3000:3000'
+    entrypoint: ./entrypoints/docker-entrypoint.sh
+    env_file: .dockerbuild/.env
+    environment:
+      - REDIS_CACHE=true
+
+  app-channel:
+    image: app-channel
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - app
+      - postgres
+      - redis
+    ports:
+      - '3001:3001'
+    entrypoint: ./entrypoints/docker-cable-entrypoint.sh
+    env_file: .dockerbuild/.env
+    environment:
+      - REDIS_CACHE=false
+
+  sidekiq:
+    image: sidekiq
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - postgres
+      - redis
+    entrypoint: ./entrypoints/docker-sidekiq-entrypoint.sh
+    env_file: .dockerbuild/.env
+    environment:
+      - REDIS_CACHE=false
+
+  app-migrations:
+    image: app
+    depends_on:
+      - app
+      - postgres
+    command:
+      - ./setup-db.sh
+    env_file: .dockerbuild/.env
+    environment:
+      - REDIS_CACHE=false
+
+  postgres:
+    image: postgres:13.5-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+
+  redis:
+    image: redis:7.0.5
+    ports:
+      - 6379:6379
+    volumes:
+      - redis-data:/data
+
+  redis-store:
+    image: redis:7.0.5
+    ports:
+      - 6380:6379
+    volumes:
+      - redis-store-data:/cache-data
+
+volumes:
+  postgres-data:
+  redis-data:
+  redis-store-data:
