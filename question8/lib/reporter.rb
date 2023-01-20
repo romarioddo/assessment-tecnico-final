@@ -1,69 +1,21 @@
 # frozen_string_literal: true
 
+require 'gyoku'
+
 class JsonWriter
-  def writer
-    content = '
-      {
-        "breakfast_menu": {
-          "food": [
-            {
-              "name": "Belgian Waffles",
-              "price": "$5.95",
-              "description": "Two of our famous Belgian Waffles with plenty of real maple syrup",
-              "calories": 650
-            },
-            {
-              "name": "Strawberry Belgian Waffles",
-              "price": "$7.95",
-              "description": "Light Belgian waffles covered with strawberries and whipped cream",
-              "calories": 900
-            },
-            {
-              "name": "Berry-Berry Belgian Waffles",
-              "price": "$8.95",
-              "description": "Belgian waffles covered with assorted fresh berries and whipped cream",
-              "calories": 900
-            }
-          ]
-        }
-      }
-    '
-    File.write('file.json', content)
+  def writer(content)
+    File.write('question8-file.json', content)
   end
 end
 
 class XMLWriter
-  def writer
-    content = '
-      <?xml version="1.0" encoding="UTF-8"?>
-      <breakfast_menu>
-      <food>
-      <name>Belgian Waffles</name>
-      <price>$5.95</price>
-      <description>
-      Two of our famous Belgian Waffles with plenty of real maple syrup
-      </description>
-      <calories>650</calories>
-      </food>
-      <food>
-      <name>Strawberry Belgian Waffles</name>
-      <price>$7.95</price>
-      <description>
-      Light Belgian waffles covered with strawberries and whipped cream
-      </description>
-      <calories>900</calories>
-      </food>
-      <food>
-      <name>Berry-Berry Belgian Waffles</name>
-      <price>$8.95</price>
-      <description>
-      Belgian waffles covered with assorted fresh berries and whipped cream
-      </description>
-      <calories>900</calories>
-      </food>
-      </breakfast_menu>
-    '
-    File.write('file.xml', content)
+  def writer(content)
+    root = content.instance_of?(Array) ? { root: content } : content
+
+    File.write(
+      'question8-file.xml',
+      Gyoku.xml(root)
+    )
   end
 end
 
@@ -73,10 +25,10 @@ class Reporter
     'CSV' => XMLWriter
   }
 
-  def generateReport(format)
+  def generateReport(format, content)
     generator = GENERATORS[format]
     raise 'Format not supported' unless generator
 
-    generator.new.writer
+    generator.new.writer(content)
   end
 end
