@@ -66,7 +66,7 @@ jogos da copa do mundo e você foi responsável por criar esta solução. A usab
   4. e irá receber as informações de tempos em tempos. 
 
   - Digite abaixo qual solução você faria:
-
+    - https://github.com/romarioddo/assessment-tecnico-final/blob/main/question6/README.md
 
 
 - [QUESTÃO 7] Continuando com o sistema de bot (Robô de transmissão) acima, a empresa que você trabalha precisa criar um
@@ -74,7 +74,7 @@ novo recurso e você ficou responsável por criar a feature que consistem em faz
 todos os times de futebol e o id do cliente que irá receber por notificação de SMS em tempo real do status do jogo, o
 descadastramento do time vai ser feito pelo próprio cliente em uma devolução de SMS para o telefone da empresa. 
   - Digite abaixo como você solucionaria este problema:
-
+    - https://github.com/romarioddo/assessment-tecnico-final/blob/main/question7/README.md
 
 
 - [QUESTÃO 8] Como você melhoraria o código abaixo:
@@ -195,3 +195,4 @@ Algumas funções deste sistema incluem:
     Obs: não precisa ter implementação de código, a avaliação será feita somente na estrutura de arquivos e organização do projeto 
 
   - Coloque abaixo o link do seu github:
+    - https://github.com/romarioddo/assessment-tecnico-final/blob/main/question10/README.md
