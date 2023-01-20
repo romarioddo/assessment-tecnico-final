@@ -55,7 +55,7 @@ SMS, Email e ao assinar em uma newsletter os usuários deverão receber todas as
 você montaria a lógica levando em conta que você está em uma aplicação rails e terá uma única tabela de pessoas,
 contento física (CPF) e jurídica (CNPJ. 
   - Coloque abaixo o link do seu github:
-
+    - https://github.com/romarioddo/assessment-tecnico-final/blob/main/question5/README.md
 
 
 - [QUESTÃO 6] Seu cliente está querendo fazer um bot (Robô de transmissão) para informar aos jornalistas o resultado dos
