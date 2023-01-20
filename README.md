@@ -66,7 +66,7 @@ jogos da copa do mundo e você foi responsável por criar esta solução. A usab
   4. e irá receber as informações de tempos em tempos. 
 
   - Digite abaixo qual solução você faria:
-
+    - https://github.com/romarioddo/assessment-tecnico-final/blob/main/question6/README.md
 
 
 - [QUESTÃO 7] Continuando com o sistema de bot (Robô de transmissão) acima, a empresa que você trabalha precisa criar um
