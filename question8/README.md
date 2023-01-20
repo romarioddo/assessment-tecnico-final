@@ -1,6 +1,6 @@
 # Questão 4
 
-A solução para a questão esta no arquivo:
+Solução:
 ```
 lib/reporter.rb
 ```
