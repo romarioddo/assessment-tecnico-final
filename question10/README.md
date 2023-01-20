@@ -1,3 +1,48 @@
 # Questão 10
 
 Solução:
+
+```ruby
+app/
+  controllers/
+    clients_controller.rb
+    users_controller.rb
+    vehicles_controller.rb
+    ...
+  models/
+    user.rb
+    client.rb
+    vehicle.rb
+    ...
+  ...
+bin/
+config/
+config.ru
+db/
+Gemfile
+Gemfile.lock
+.git/
+.gitattributes
+.gitignore
+lib/
+  notification/
+    whatsapp.rb
+    sms.rb
+    email.rb
+  payment/
+    credit.rb
+    debit.rb
+    pix.rb
+  notification.rb
+  payment.rb
+  ...
+log/
+public/
+Rakefile
+README.md
+.ruby-version
+storage/
+test/
+tmp/
+vendor/
+```
