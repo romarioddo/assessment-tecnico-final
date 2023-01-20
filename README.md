@@ -167,7 +167,7 @@ descadastramento do time vai ser feito pelo próprio cliente em uma devolução 
 - [QUESTÃO 9] O sistema que você trabalha tem muitas funções e dependências (componentes para o funcionamento da
 arquitetura) e você precisa ajudar sua equipe facilitando o setup da aplicação para novos integrantes do time.
   - Descreva abaixo como você faria:
-
+    - https://github.com/romarioddo/assessment-tecnico-final/blob/main/question9/README.md
 
 
 - [QUESTÃO 10] Surgiu uma demanda para construir a arquitetura de um sistema para locação de veículos. Esta demanda é
