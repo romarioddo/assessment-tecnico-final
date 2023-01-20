@@ -2,9 +2,9 @@
 
 Solução:
 ```
-lib/action.rb
+lib/*
 ```
-Execute o comando abaixo para visualizar as respostas
+Execute o comando abaixo:
 ```
 ./question4/bin/main.rb
 ```

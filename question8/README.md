@@ -2,7 +2,7 @@
 
 Solução:
 ```
-lib/reporter.rb
+lib/*
 ```
 Execute o comando abaixo:
 ```
