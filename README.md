@@ -74,7 +74,7 @@ novo recurso e você ficou responsável por criar a feature que consistem em faz
 todos os times de futebol e o id do cliente que irá receber por notificação de SMS em tempo real do status do jogo, o
 descadastramento do time vai ser feito pelo próprio cliente em uma devolução de SMS para o telefone da empresa. 
   - Digite abaixo como você solucionaria este problema:
-
+    - https://github.com/romarioddo/assessment-tecnico-final/blob/main/question7/README.md
 
 
 - [QUESTÃO 8] Como você melhoraria o código abaixo:
